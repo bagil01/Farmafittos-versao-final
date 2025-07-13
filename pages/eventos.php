@@ -92,7 +92,7 @@ $resultado = $conexao->query($sql);
                 </div>
             <?php endwhile; ?>
         <?php else: ?>
-            <p style="text-align:center;">Nenhum evento encontrado.</p>
+            <p style="text-align:center;padding: 150px;">Nenhum evento encontrado.</p>
         <?php endif; ?>
     </div>
 

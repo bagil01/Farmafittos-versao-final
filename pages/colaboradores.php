@@ -57,7 +57,7 @@ $resultVoluntarios = $conexao->query($sqlVoluntarios);
                     </div>
                 <?php endwhile; ?>
             <?php else: ?>
-                <p style="text-align: center; padding: 100px;">Nenhum colaborador cadastrado.</p>
+                <p style="text-align: center; padding: 150px;">Nenhum colaborador cadastrado.</p>
             <?php endif; ?>
         </div>
 

@@ -56,7 +56,7 @@
                 <li class="dropdown">
                     <a href="#">Plantas ▾</a>
                     <ul class="submenu">
-                        <li><a href="<?= BASE_URL ?>/pages/prev-plantas.php">Plantas</a></li>
+                        <li><a href="<?= BASE_URL ?>/pages/prev_plantas.php">Plantas</a></li>
                         <li><a href="<?= BASE_URL ?>/pages/referencias.php">Referências</a></li>
                     </ul>
                 </li>

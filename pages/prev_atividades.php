@@ -26,7 +26,7 @@ $resultado = $stmt->get_result();
 <body>
     <div class="container">
         <?php if ($resultado->num_rows === 0): ?>
-            <p style="text-align: center;">Nenhuma atividade encontrada.</p>
+            <p style="text-align: center; padding: 150px;">Nenhuma atividade encontrada.</p>
         <?php endif; ?>
 
         <?php while ($atividade = $resultado->fetch_assoc()): ?>

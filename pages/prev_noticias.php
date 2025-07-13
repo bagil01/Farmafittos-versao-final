@@ -46,7 +46,7 @@ $resultado = $stmt->get_result();
 
     <div class="container-left">
         <?php if ($resultado->num_rows === 0): ?>
-            <p style="text-align:center;">Nenhuma notícia encontrada.</p>
+            <p style="text-align:center; padding: 150px;">Nenhuma notícia encontrada.</p>
         <?php endif; ?>
 
         <?php while ($noticia = $resultado->fetch_assoc()): ?>

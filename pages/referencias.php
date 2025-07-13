@@ -39,7 +39,7 @@
           </div>
         <?php endwhile; ?>
       <?php else: ?>
-        <p style="text-align:center;">Nenhuma referência encontrada.</p>
+        <p style="text-align:center; padding: 150px;">Nenhuma referência encontrada.</p>
       <?php endif; ?>
 
     </div>
