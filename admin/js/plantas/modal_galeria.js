@@ -1,8 +1,14 @@
 function abrirModalGaleria(idPlanta) {
   const modal = document.getElementById('modalGaleriaImagens');
   const galeria = document.getElementById('conteudoGaleria');
+  const fechar = document.getElementById('fecharModalGaleria');
 
-  fetch(`../../backend/crud_planta/listar.php?id_planta=${idPlanta}`)
+  if (!modal || !galeria || !fechar) return;
+
+  // Limpa conteúdo anterior
+  galeria.innerHTML = '<p>Carregando imagens...</p>';
+
+  fetch(`../../backend/crud_planta/listar_imagens.php?id_planta=${idPlanta}`)
     .then(res => res.text())
     .then(html => {
       galeria.innerHTML = html;
@@ -13,7 +19,15 @@ function abrirModalGaleria(idPlanta) {
       modal.style.display = 'flex';
     });
 
-  document.getElementById('fecharModalGaleria').onclick = () => {
+  // Fecha ao clicar no X
+  fechar.onclick = () => {
     modal.style.display = 'none';
+  };
+
+  // Fecha ao clicar fora do modal
+  modal.onclick = (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
   };
 }

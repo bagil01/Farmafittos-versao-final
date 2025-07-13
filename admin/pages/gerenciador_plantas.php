@@ -212,7 +212,6 @@ $resultado = $conexao->query($query);
     <script src="../../admin/js/plantas/modal_imagens.js"></script>
     <script src="../../admin/js/plantas/modal_galeria.js"></script>
     <script>
-
     </script>
 </body>
 
