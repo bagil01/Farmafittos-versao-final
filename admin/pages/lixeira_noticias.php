@@ -9,7 +9,9 @@ if (!$resultado) {
 }
 
 ?>
-
+<?php 
+require_once('verifica_login.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>

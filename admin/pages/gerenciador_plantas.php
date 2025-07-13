@@ -4,7 +4,9 @@ require_once('../../includes/conexao.php');
 $query = "SELECT * FROM plantas WHERE deletado = 0 ORDER BY id DESC";
 $resultado = $conexao->query($query);
 ?>
-
+<?php 
+require_once('verifica_login.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 

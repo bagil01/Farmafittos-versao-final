@@ -5,7 +5,9 @@ require_once('../../includes/conexao.php');
 $query = "SELECT * FROM noticias WHERE deletado = 0 ORDER BY data_publicacao DESC";
 $resultado = $conexao->query($query);
 ?>
-
+<?php
+require_once('verifica_login.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -77,8 +79,8 @@ $resultado = $conexao->query($query);
         <div class="modal">
             <span class="fechar-modal" id="fecharModal">&times;</span>
             <h2>Cadastrar Nova Notícia</h2>
-            <form id="formCadastro" action="../../backend/crud_noticia/processa_noticia.php"
-                method="POST" enctype="multipart/form-data">
+            <form id="formCadastro" action="../../backend/crud_noticia/processa_noticia.php" method="POST"
+                enctype="multipart/form-data">
                 <label for="titulo">Título da Notícia:</label>
                 <input type="text" id="titulo" name="titulo" required />
 
@@ -167,8 +169,7 @@ $resultado = $conexao->query($query);
         <div class="modal">
             <span class="fechar-modal" id="fecharModalImagens">&times;</span>
             <h2>Adicionar Imagens</h2>
-            <form action="../../backend/crud_noticia/upload_imagens.php" method="POST"
-                enctype="multipart/form-data">
+            <form action="../../backend/crud_noticia/upload_imagens.php" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="id_noticia" id="idNoticiaImagens">
 
                 <label for="imagens">Selecione as imagens:</label>

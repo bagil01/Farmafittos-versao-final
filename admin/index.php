@@ -2,8 +2,6 @@
 session_start();
 require_once(__DIR__ . '/../includes/conexao.php');
 
-$erro = '';
-
 // Redireciona se já estiver logado
 if (isset($_SESSION['admin_id'])) {
     header("Location: ../admin/pages/gerenciador.php");
@@ -54,13 +52,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
+// Suponha que o login foi validado corretamente...
+$_SESSION['usuario_logado'] = true;
+
+$erro = '';
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Admin</title>
     <link rel="stylesheet" href="./css/index.css">
     <style>
@@ -71,6 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     </style>
 </head>
+
 <body>
     <div class="login-container">
         <h2>Login Administrativo</h2>
@@ -103,4 +107,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     </script>
 </body>
+
 </html>

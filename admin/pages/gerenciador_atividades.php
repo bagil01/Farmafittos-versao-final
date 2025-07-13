@@ -4,6 +4,8 @@ require_once('../../includes/conexao.php');
 // Seleciona todas as Atividades que NÃO estão na lixeira
 $query = "SELECT * FROM atividades WHERE deletado = 0 ORDER BY data_publicacao DESC";
 $resultado = $conexao->query($query);
+
+require_once('verifica_login.php');
 ?>
 
 <!DOCTYPE html>

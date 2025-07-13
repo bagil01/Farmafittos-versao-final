@@ -3,6 +3,7 @@
 require_once('../../includes/conexao.php');
 $query = "SELECT * FROM referencias";
 $resultado = $conexao->query($query);
+require_once('verifica_login.php');
 ?>
 
 <!DOCTYPE html>

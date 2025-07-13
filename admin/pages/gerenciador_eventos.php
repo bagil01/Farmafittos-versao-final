@@ -3,7 +3,9 @@ require_once('../../includes/conexao.php');
 $query = "SELECT * FROM eventos ORDER BY data_evento DESC";
 $resultado = $conexao->query($query);
 ?>
-
+<?php 
+require_once('verifica_login.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
