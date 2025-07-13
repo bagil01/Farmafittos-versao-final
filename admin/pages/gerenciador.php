@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -45,12 +43,12 @@
                                 <h3>Gerenciar Atividades</h3>
                             </div>
                         </a>
-
-                        <div class="card">
-                            <i class="fa-solid fa-sun-plant-wilt"></i>
-                            <h3>Gerenciar Plantas</h3>
-                        </div>
-
+                        <a href="gerenciador_plantas.php">
+                            <div class="card">
+                                <i class="fa-solid fa-sun-plant-wilt"></i>
+                                <h3>Gerenciar Plantas</h3>
+                            </div>
+                        </a>
                         <a href="gerenciador_eventos.php">
                             <div class="card">
                                 <i class="fa-solid fa-calendar-days"></i>

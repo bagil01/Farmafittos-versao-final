@@ -49,7 +49,9 @@ body {
     text-align: center;
     padding: 20px;
 }
-
+.noticia:hover {
+    transform: scale(1.05);
+}
 .noticias h2,.card-parceiros h2,
 .container-colaboradores h2, .destaque h2   {
     width: 20%;

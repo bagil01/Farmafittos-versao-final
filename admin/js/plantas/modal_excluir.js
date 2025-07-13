@@ -1,6 +1,6 @@
-function abrirModalImagens(idNoticia) {
-  const modal = document.getElementById('modalImagens');
-  const inputId = document.getElementById('idNoticiaImagens');
+function abrirModalExclusao(idNoticia) {
+  const modal = document.getElementById('modalExcluirPlanta');
+  const inputId = document.getElementById('idPlantaExcluir');
 
   if (modal && inputId) {
     inputId.value = idNoticia;
@@ -9,8 +9,8 @@ function abrirModalImagens(idNoticia) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const fechar = document.getElementById('fecharModalImagens');
-  const modal = document.getElementById('modalImagens');
+  const fechar = document.getElementById('fecharModalExcluir');
+  const modal = document.getElementById('modalExcluirPlanta');
 
   if (fechar && modal) {
     fechar.addEventListener('click', () => {

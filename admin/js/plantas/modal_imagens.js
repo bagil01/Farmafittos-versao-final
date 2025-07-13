@@ -1,16 +1,16 @@
-function abrirModalExclusao(idNoticia) {
-  const modal = document.getElementById('modalExcluirNoticia');
-  const inputId = document.getElementById('idNoticiaExcluir');
+function abrirModalImagens(idPlanta) {
+  const modal = document.getElementById('modalImagens');
+  const inputId = document.getElementById('plantasIdImagens');
 
   if (modal && inputId) {
-    inputId.value = idNoticia;
+    inputId.value = idPlanta;
     modal.style.display = 'flex';
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const fechar = document.getElementById('fecharModalExcluir');
-  const modal = document.getElementById('modalExcluirNoticia');
+  const fechar = document.getElementById('fecharModalImagens');
+  const modal = document.getElementById('modalImagens');
 
   if (fechar && modal) {
     fechar.addEventListener('click', () => {
