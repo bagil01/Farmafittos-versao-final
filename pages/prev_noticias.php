@@ -41,7 +41,7 @@ $resultado = $stmt->get_result();
 <div class="container">
     <div class="mobile-buttons">
         <button onclick="openModal('modalSearch')"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <button onclick="openModal('modalFilter')"><i class="fa-solid fa-compass"></i></button>
+        <button onclick="openModal('modalFilter')"><i class="fa-solid fa-filter"></i></button>
     </div>
 
     <div class="container-left">
