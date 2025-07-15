@@ -30,7 +30,6 @@ $fotos = $stmtFotos->get_result();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?= htmlspecialchars($planta['nomes_populares']) ?></title>
-    <link rel="icon" type="image/png" href="../assents/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/icons/fontawesome-free-6.5.2-web/css/all.css" />
     <link rel="stylesheet" href="../assets/css/plantas_integra.css">
@@ -75,9 +74,26 @@ $fotos = $stmtFotos->get_result();
                 </section>
 
                 <section>
-                    <h2>Ações Farmacológicas</h2>
-                    <p><?= nl2br(htmlspecialchars($planta['acoes_farmacologicas'])) ?></p>
+                    <h2>💊 Ações Farmacológicas</h2>
+                    <ul>
+                        <?php
+                        $itens = explode(';', $planta['acoes_farmacologicas']);
+                        foreach ($itens as $item) {
+                            $item = trim($item);
+                            if (!empty($item)) {
+                                // Se houver dois-pontos, separar em termo e descrição
+                                if (strpos($item, ':') !== false) {
+                                    list($termo, $descricao) = explode(':', $item, 2);
+                                    echo "<li><strong>" . htmlspecialchars(trim($termo)) . ":</strong> " . htmlspecialchars(trim($descricao)) . "</li>";
+                                } else {
+                                    echo "<li>" . htmlspecialchars($item) . "</li>";
+                                }
+                            }
+                        }
+                        ?>
+                    </ul>
                 </section>
+
             </div>
 
             <!-- Página 2: Mídias -->
@@ -112,54 +128,12 @@ $fotos = $stmtFotos->get_result();
     </div>
 
     <script>
-        // Alternar páginas
-        const botoes = document.querySelectorAll('.pagina-btn');
-        const paginas = document.querySelectorAll('.pagina');
+       
 
-        botoes.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const pagina = btn.dataset.pagina;
-
-                paginas.forEach(pg => pg.style.display = 'none');
-                document.querySelector(`.pagina[data-pagina="${pagina}"]`).style.display = 'block';
-
-                botoes.forEach(b => b.classList.remove('ativo'));
-                btn.classList.add('ativo');
-            });
-        });
-
-        // Modal de imagem
-        const imagens = document.querySelectorAll('.midias img');
-        const modal = document.getElementById('modal-foto');
-        const imagemModal = document.getElementById('imagem-modal');
-        const fechar = document.getElementById('fechar');
-        const overlay = document.getElementById('overlay');
-        const anterior = document.getElementById('anterior');
-        const proximo = document.getElementById('proximo');
-        let indiceAtual = 0;
-
-        const abrirModal = (src, index) => {
-            modal.style.display = 'flex';
-            imagemModal.src = src;
-            indiceAtual = index;
-        };
-
-        imagens.forEach((img, index) => {
-            img.addEventListener('click', () => abrirModal(img.src, index));
-        });
-
-        const atualizarImagem = (indice) => {
-            if (indice < 0) indice = imagens.length - 1;
-            if (indice >= imagens.length) indice = 0;
-            imagemModal.src = imagens[indice].src;
-            indiceAtual = indice;
-        };
-
-        anterior.addEventListener('click', () => atualizarImagem(indiceAtual - 1));
-        proximo.addEventListener('click', () => atualizarImagem(indiceAtual + 1));
-        fechar.addEventListener('click', () => modal.style.display = 'none');
-        overlay.addEventListener('click', () => modal.style.display = 'none');
+        
     </script>
+    <script src="../assets/js/planta/alterar_pag.js"></script>
+    <script src="../assets/js/planta/tela_cheia.js"></script>
 </body>
 
 </html>

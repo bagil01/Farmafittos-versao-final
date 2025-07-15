@@ -205,14 +205,14 @@ section li {
 .voltar a {
     list-style: none;
     text-decoration: none;
-    color: #255e39;
-    ;
+    color: #69372E;
+    
 
 
 }
 
 .voltar a:hover {
-    color: #5ba976;
+    color: #69372e90;
 }
 
 @media (max-width: 768px) {
