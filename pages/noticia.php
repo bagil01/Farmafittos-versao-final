@@ -106,6 +106,7 @@ $recomendadas = $stmt_recomendadas->get_result();
                 </section>
             </div>
         </div>
+        
         <!-- Paginação -->
         <div class="paginacao">
             <button class="pagina-btn" data-pagina="1">Página 1</button>

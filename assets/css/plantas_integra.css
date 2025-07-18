@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -16,14 +15,16 @@ header {
     justify-content: center;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 6px #000;
-    
+
 }
-header img{
-     filter: blur(5px)
+
+header img {
+    filter: blur(5px)
 }
+
 header h1 {
     background-color: #ffffff91;
-     font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     padding: 1rem 2rem;
     border-radius: 16px;
     font-size: 2.5rem;
@@ -75,7 +76,7 @@ section p {
 }
 
 section li {
-    color: #000000;
+    color: #69372E;
 }
 
 .terceira-pagina img {
@@ -150,8 +151,8 @@ section li {
 }
 
 #modal-foto img {
-    max-width: 90%;
-    max-height: 80vh;
+    width: 750px;
+    max-height: 700px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
@@ -206,7 +207,7 @@ section li {
     list-style: none;
     text-decoration: none;
     color: #69372E;
-    
+
 
 
 }
@@ -243,5 +244,12 @@ section li {
     #modal-foto #anterior:hover,
     #modal-foto #proximo:hover {
         color: #ffffff;
+    }
+
+    #modal-foto img {
+        width: 90%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
 }
