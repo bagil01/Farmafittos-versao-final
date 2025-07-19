@@ -1,3 +1,5 @@
+let galeriaModalJaConfigurado = false;
+
 function abrirModalGaleria(idPlanta) {
   const modal = document.getElementById('modalGaleriaImagens');
   const galeria = document.getElementById('conteudoGaleria');
@@ -8,8 +10,9 @@ function abrirModalGaleria(idPlanta) {
   // Limpa conteúdo anterior
   galeria.innerHTML = '<p>Carregando imagens...</p>';
 
+  // Requisição para carregar imagens
   fetch(`../../backend/crud_planta/listar_imagens.php?id_planta=${idPlanta}`)
-    .then(res => res.text())
+    .then(response => response.text())
     .then(html => {
       galeria.innerHTML = html;
       modal.style.display = 'flex';
@@ -19,15 +22,18 @@ function abrirModalGaleria(idPlanta) {
       modal.style.display = 'flex';
     });
 
-  // Fecha ao clicar no X
-  fechar.onclick = () => {
-    modal.style.display = 'none';
-  };
-
-  // Fecha ao clicar fora do modal
-  modal.onclick = (event) => {
-    if (event.target === modal) {
+  // Evita reatribuir listeners múltiplas vezes
+  if (!galeriaModalJaConfigurado) {
+    fechar.addEventListener('click', () => {
       modal.style.display = 'none';
-    }
-  };
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+
+    galeriaModalJaConfigurado = true;
+  }
 }

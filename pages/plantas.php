@@ -126,12 +126,6 @@ $fotos = $stmtFotos->get_result();
         <div id="anterior">&#10094;</div>
         <div id="proximo">&#10095;</div>
     </div>
-
-    <script>
-       
-
-        
-    </script>
     <script src="../assets/js/planta/alterar_pag.js"></script>
     <script src="../assets/js/planta/tela_cheia.js"></script>
 </body>
