@@ -1,3 +1,7 @@
+ <?php
+require_once('verifica_login.php');
+
+?>
 <?php
 require_once('../../includes/conexao.php');
 

@@ -107,7 +107,7 @@ $resultado = $stmt->get_result();
     <div class="modal-content-pesquisa">
         <span class="close" onclick="closeModal('modalSearch')">&times;</span>
         <div class="container-seach-modal">
-            <h1>Pesquisar Planta</h1>
+            <h1>Pesquisar Plantas</h1>
             <form method="GET" action="prev_plantas.php">
                 <div class="input-seach-modal">
                     <input type="text" name="buscar" placeholder="Digite para buscar...">

@@ -204,11 +204,14 @@
 .input-seach-modal {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 95%;
     background: #f4f4f4;
     border-radius: 8px;
     padding: 8px;
+    justify-content: center;
+    margin: auto;
 }
+
 
 .input-seach-modal i {
     color: #ffffff;
@@ -225,7 +228,7 @@
 }
 
 .input-seach-modal button {
-    background: #5ba976;
+    background: #69372E;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -249,9 +252,9 @@
 }
 
 
-.container-filter-modal h1, .container-seach h1 {
+.container-filter-modal h1, .container-seach-modal h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 25px;
     color: #69372E;
     margin-bottom: 15px;
 }
