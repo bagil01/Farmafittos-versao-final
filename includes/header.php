@@ -28,11 +28,7 @@
         </div>
 
         <nav class="navbar">
-            <div class="mobile-menu-icon" id="menuToggle">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            
 
             <ul class="menu" id="menuMobile">
                 <li><a href="<?= BASE_URL ?>/index.php">Página Inicial</a></li>
@@ -65,52 +61,6 @@
             </ul>
         </nav>
     </header>
-
-
-    <!-- Modal de Configurações -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <div class="container-config">
-                <span class="fechar" id="fecharModal">&times;</span>
-
-                <div class="container-opcoes">
-                    <a href="./admin/index.php">
-                        <div class="opcao">
-                            <i class="fa-solid fa-users-gear"></i>
-                            <h4>Painel de administração</h4>
-                        </div>
-                    </a>
-
-                    <div class="opcao">
-                        <i class="fa-solid fa-lock"></i>
-                        <h4>Privacidade e Termo de Uso</h4>
-                    </div>
-
-                    <div class="opcao">
-                        <i class="fa-solid fa-circle-question"></i>
-                        <h4>Ajuda e Suporte</h4>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-
-                    <div class="opcao">
-                        <i class="fa-solid fa-moon"></i>
-                        <h4>Tela e Acessibilidade</h4>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-
-                    <div class="opcao">
-                        <i class="fa-solid fa-comment-dots"></i>
-                        <h4>Dar Feedback</h4>
-                    </div>
-
-                    <div class="opcao sair">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        <h4>Sair</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script src="<?= BASE_URL ?>/assets/js/config.js"></script>
