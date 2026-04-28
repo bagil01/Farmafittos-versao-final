@@ -8,7 +8,7 @@
 <footer class="footer">
   <div class="footer-info">
     <h2 class="footer-logo">FARMAFITTOS</h2>
-    <p>&copy; 2025 FARMAFITTOS</p>
+    <p>&copy; 2026 FARMAFITTOS</p>
     <p>Todos os direitos reservados.</p>
   </div>
 
@@ -24,8 +24,17 @@
     <h2>Redes Sociais</h2>
     <ul class="footer-icons">
       
-      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-youtube"></i></i></a></li>
+      <li>
+    <a href="https://www.instagram.com/farmafittos?igsh=MXVoNnY3a3doeHdocQ==" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+    </a>
+</li>
+
+<li>
+    <a href="https://www.youtube.com/@Farmafittos" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+</li>
     </ul>
     <div class="footer-terms">
       <a href="#">Termos de Uso e Política de Privacidade</a>

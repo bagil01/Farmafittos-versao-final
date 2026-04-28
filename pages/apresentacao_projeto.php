@@ -4,6 +4,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="../icons/fontawesome-free-6.5.2-web/css/all.css">
     <?php include '../includes/header.php'; ?>
 </head>
+
 <body>
     <div class="container">
         <!-- Endereço e Contatos -->
@@ -27,9 +29,24 @@
             <div class="contatos">
                 <h3>Contatos:</h3>
                 <ul>
-                    <li><a href="https://www.youtube.com/@Farmafittos" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a href="https://www.instagram.com/farmafittos" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li>
+                        <a href="https://www.instagram.com/farmafittos?igsh=MXVoNnY3a3doeHdocQ==" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/@Farmafittos" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="mailto:seuemail@gmail.com?subject=Contato%20Farmafittos&body=Olá,%20gostaria%20de%20mais%20informações.">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -70,7 +87,8 @@
 
     </div>
 
-<?php include '../includes/footer.php';?>
+    <?php include '../includes/footer.php'; ?>
 
 </body>
+
 </html>
