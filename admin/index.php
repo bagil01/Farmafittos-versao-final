@@ -36,7 +36,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     // Login bem-sucedido
                     $_SESSION['admin_id'] = $admin['id'];
                     $_SESSION['admin_nome'] = $admin['nome'];
+
+                    // 🔥 ADICIONE ISSO
+                    $_SESSION['usuario_logado'] = true;
+                    $_SESSION['tipo_usuario'] = 'admin';
+
                     $_SESSION['tentativas'] = 0;
+
                     header("Location: ../admin/pages/gerenciador.php");
                     exit();
                 } else {
@@ -52,10 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
-// Suponha que o login foi validado corretamente...
-$_SESSION['usuario_logado'] = true;
 
-$erro = '';
 ?>
 
 <!DOCTYPE html>

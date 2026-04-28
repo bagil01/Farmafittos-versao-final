@@ -1,4 +1,4 @@
 <?php 
-define('BASE_URL', '/Farmafittos-vers-o-final');
+define('BASE_URL', '/Farmafittos-versao-final');
 
 ?>

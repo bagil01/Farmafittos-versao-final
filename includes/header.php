@@ -15,11 +15,7 @@
                 <a href="<?= BASE_URL ?>/">
                     <img src="<?= BASE_URL ?>/assets/photos/logo-preta.png" alt="Logo do projeto" class="logo" />
                 </a>
-                <ul class="icons-right">
-                    <li>
-                        <a id="abrirModal" href="#"><i class="fa-solid fa-gear"></i></a>
-                    </li>
-                </ul>
+               
             </div>
             <div class="titulo_header">
                 <h1>FARMAFITTOS</h1>
