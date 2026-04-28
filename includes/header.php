@@ -15,7 +15,7 @@
                 <a href="<?= BASE_URL ?>/">
                     <img src="<?= BASE_URL ?>/assets/photos/logo-preta.png" alt="Logo do projeto" class="logo" />
                 </a>
-               
+
             </div>
             <div class="titulo_header">
                 <h1>FARMAFITTOS</h1>
@@ -24,7 +24,11 @@
         </div>
 
         <nav class="navbar">
-            
+            <div class="mobile-menu-icon" id="menuToggle">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
 
             <ul class="menu" id="menuMobile">
                 <li><a href="<?= BASE_URL ?>/index.php">Página Inicial</a></li>
@@ -62,7 +66,7 @@
     <script src="<?= BASE_URL ?>/assets/js/config.js"></script>
     <script src="<?= BASE_URL ?>/assets/js/header.js"></script>
     <script src="<?= BASE_URL ?>/assets/js/animacao.js"></script>
-  
+
 </body>
 
 </html>
