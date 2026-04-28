@@ -357,4 +357,10 @@ section {
     #modal-foto #proximo:hover {
         color: #fff;
     }
+    section {
+    font-family: 'Times New Roman', Times, serif;
+    color: #69372E;
+    font-size: 18px;
+    text-align: justify;
+}
 }
